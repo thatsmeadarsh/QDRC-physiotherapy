@@ -29,11 +29,12 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
+            gap: 3rem;
         }
         
         .logo {
-            height: 50px;
+            height: 40px;
             width: auto;
             border-radius: 4px;
         }
@@ -216,13 +217,17 @@
         
         @media (max-width: 768px) {
             nav {
-                flex-direction: column;
-                gap: 1rem;
+                gap: 1.5rem;
+                padding: 0.75rem 3%;
+            }
+            
+            .logo {
+                height: 30px;
             }
             
             nav ul {
-                gap: 1rem;
-                justify-content: center;
+                gap: 0.8rem;
+                font-size: 0.9rem;
             }
             
             .hero {
