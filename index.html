@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QDRC Physiotherapy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        nav {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 50vh;
+        }
+        
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .hero h1 {
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .service-card h3 {
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>QDRC Physiotherapy</h1>
+        <p>Your Path to Recovery and Wellness</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to QDRC Physiotherapy, where we are dedicated to helping you achieve optimal physical health and wellness. Our experienced team of physiotherapists uses evidence-based treatments to help you recover from injuries, manage chronic conditions, and improve your overall quality of life.</p>
+        <p style="margin-top: 1rem;">With state-of-the-art facilities and personalized care plans, we ensure that each patient receives the attention and treatment they deserve.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Sports Injury Rehabilitation</h3>
+                <p>Specialized treatment for athletes recovering from sports-related injuries.</p>
+            </div>
+            <div class="service-card">
+                <h3>Manual Therapy</h3>
+                <p>Hands-on techniques to reduce pain and improve mobility.</p>
+            </div>
+            <div class="service-card">
+                <h3>Post-Surgical Rehabilitation</h3>
+                <p>Comprehensive recovery programs following surgical procedures.</p>
+            </div>
+            <div class="service-card">
+                <h3>Chronic Pain Management</h3>
+                <p>Long-term strategies to manage and reduce chronic pain conditions.</p>
+            </div>
+            <div class="service-card">
+                <h3>Orthopedic Physiotherapy</h3>
+                <p>Treatment for musculoskeletal conditions and injuries.</p>
+            </div>
+            <div class="service-card">
+                <h3>Neurological Rehabilitation</h3>
+                <p>Specialized care for patients with neurological conditions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong> 123 Health Street, Medical District</p>
+            <p><strong>Phone:</strong> +91 <phone-number></p>
+            <p><strong>Email:</strong> info@qdrcphysio.com</p>
+            <p><strong>Hours:</strong> Monday - Saturday, 9:00 AM - 7:00 PM</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 QDRC Physiotherapy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
