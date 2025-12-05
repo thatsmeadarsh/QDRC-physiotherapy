@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qdrc-physiotherapy.pages.dev/sitemap.xml
